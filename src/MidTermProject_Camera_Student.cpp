@@ -246,10 +246,10 @@ int main(int argc, const char *argv[])
                                             vector<char>(), cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
                             string windowName = "Matching keypoints between two camera images";
-                           // cv::namedWindow(windowName, 7);
-                            //cv::imshow(windowName, matchImg);
-                            //cout << "Press key to continue to next image" << endl;
-                            //cv::waitKey(0); // wait for key to be pressed
+                            cv::namedWindow(windowName, 7);
+                            cv::imshow(windowName, matchImg);
+                            cout << "Press key to continue to next image" << endl;
+                            cv::waitKey(0); // wait for key to be pressed
                         }
                         bVis = false;
                     }
